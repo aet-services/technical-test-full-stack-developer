@@ -1,0 +1,17 @@
+function findTotal(arrayOfNumbers) {
+  let result = 0
+
+  for (let i = 0; i < arrayOfNumbers.length; i++) {
+    const value = arrayOfNumbers[i];
+
+    if (value % 2 == 0) {
+      result += 1;
+    } else if (value === 5) {
+      result += 5;
+    } else {
+      result += 3;
+    }
+  }
+  
+  return result;
+}
